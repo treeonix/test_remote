@@ -8,30 +8,51 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PX7-lX-pdN">
-                                <rect key="frame" x="114" y="649.5" width="186" height="62.5"/>
+                                <rect key="frame" x="114" y="335" width="186" height="62.5"/>
                                 <color key="backgroundColor" red="0.79922396699999998" green="0.1083196043" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="15"/>
-                                <state key="normal" title="Big Button">
+                                <state key="normal" title="Login">
                                     <color key="titleColor" systemColor="systemOrangeColor"/>
                                 </state>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="xnl-WQ-j83">
+                                <rect key="frame" x="30" y="144" width="354" height="141"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aku-mB-Ihh">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="20V-gk-XZx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oGe-Ih-YBR">
+                                        <rect key="frame" x="0.0" y="86" width="354" height="55"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xnl-WQ-j83" secondAttribute="trailing" constant="30" id="5z9-Fg-gfV"/>
+                            <constraint firstItem="PX7-lX-pdN" firstAttribute="top" secondItem="xnl-WQ-j83" secondAttribute="bottom" constant="50" id="BzE-OR-qKS"/>
                             <constraint firstItem="PX7-lX-pdN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aQ4-ty-imy"/>
                             <constraint firstItem="PX7-lX-pdN" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="cr9-bg-LhI"/>
                             <constraint firstItem="PX7-lX-pdN" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.07" id="et7-N6-tDa"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PX7-lX-pdN" secondAttribute="bottom" constant="150" id="sae-Mw-tyt"/>
+                            <constraint firstItem="xnl-WQ-j83" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="ezX-dZ-HQo"/>
+                            <constraint firstItem="xnl-WQ-j83" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="ftT-9u-4ZM"/>
                         </constraints>
                     </view>
                 </viewController>
