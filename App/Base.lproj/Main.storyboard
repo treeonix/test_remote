@@ -18,10 +18,10 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PX7-lX-pdN">
                                 <rect key="frame" x="114" y="335" width="186" height="62.5"/>
-                                <color key="backgroundColor" red="0.79922396699999998" green="0.1083196043" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
                                 <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="15"/>
                                 <state key="normal" title="Login">
-                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="xnl-WQ-j83">
@@ -42,17 +42,26 @@
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authentication" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZc-M6-lha">
+                                <rect key="frame" x="20" y="64" width="374" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xnl-WQ-j83" secondAttribute="trailing" constant="30" id="5z9-Fg-gfV"/>
+                            <constraint firstItem="ZZc-M6-lha" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="69q-ON-QIh"/>
                             <constraint firstItem="PX7-lX-pdN" firstAttribute="top" secondItem="xnl-WQ-j83" secondAttribute="bottom" constant="50" id="BzE-OR-qKS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZZc-M6-lha" secondAttribute="trailing" constant="20" id="Q0K-EU-xRu"/>
                             <constraint firstItem="PX7-lX-pdN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aQ4-ty-imy"/>
                             <constraint firstItem="PX7-lX-pdN" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="cr9-bg-LhI"/>
                             <constraint firstItem="PX7-lX-pdN" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.07" id="et7-N6-tDa"/>
                             <constraint firstItem="xnl-WQ-j83" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="ezX-dZ-HQo"/>
                             <constraint firstItem="xnl-WQ-j83" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="ftT-9u-4ZM"/>
+                            <constraint firstItem="ZZc-M6-lha" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yzx-6Y-jqI"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -62,8 +71,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
