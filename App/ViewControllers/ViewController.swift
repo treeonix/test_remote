@@ -21,4 +21,8 @@ class ViewController: UIViewController {
     func otherFeature() {
         print(#function)
     }
+    
+    func anotherFeature() {
+        print(#function)
+    }
 }
