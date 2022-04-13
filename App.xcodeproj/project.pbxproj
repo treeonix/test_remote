@@ -15,6 +15,7 @@
 		18F50EFD2807221F00800C4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F50EFB2807221F00800C4C /* LaunchScreen.storyboard */; };
 		18F50F052807278100800C4C /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F50F042807278100800C4C /* Authentication.swift */; };
 		18F50F0728072E5E00800C4C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F50F0628072E5E00800C4C /* LoginViewController.swift */; };
+		18F50F0B28073F7B00800C4C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F50F0A28073F7B00800C4C /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		18F50EFE2807221F00800C4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18F50F042807278100800C4C /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		18F50F0628072E5E00800C4C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		18F50F0A28073F7B00800C4C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				18F50EF42807221D00800C4C /* ViewController.swift */,
 				18F50F0628072E5E00800C4C /* LoginViewController.swift */,
+				18F50F0A28073F7B00800C4C /* RegisterViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				18F50EF52807221D00800C4C /* ViewController.swift in Sources */,
 				18F50EF12807221D00800C4C /* AppDelegate.swift in Sources */,
 				18F50EF32807221D00800C4C /* SceneDelegate.swift in Sources */,
+				18F50F0B28073F7B00800C4C /* RegisterViewController.swift in Sources */,
 				18F50F0728072E5E00800C4C /* LoginViewController.swift in Sources */,
 				18F50F052807278100800C4C /* Authentication.swift in Sources */,
 			);
